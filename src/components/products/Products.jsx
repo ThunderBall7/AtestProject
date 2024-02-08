@@ -42,10 +42,10 @@ const Product = ({ data, loading, error, handleIsloggedIn }) => {
     return <div>Error: {error}</div>;
   }
   return (
-    <div className="flex flex-col gap-4 w-[95%] mx-auto">
+    <div className="flex flex-col gap-4 mx-auto">
       {data.map((elem, index) => (
-        <div key={elem.id || index} className="flex w-96 mx-auto h-[120px] border border-blue-600 bg-white rounded-lg">
-          <img src={elem.src} alt={elem.heading} className="w-32 h-auto mr-4 object-cover rounded-lg" />
+        <div key={elem.id || index} className="flex w-96 max-[390px]:w-[95%] mx-auto h-[120px] border border-blue-600 bg-white rounded-lg">
+          <img src={elem.src} alt={elem.heading} className="w-32 max-[390px]:w-[30%] h-auto mr-4 object-cover rounded-lg" />
           <div className="flex justify-between">
             <div className='mr-4'>
               <h1 className="text-lg font-semibold">{elem.heading}</h1>
@@ -53,7 +53,7 @@ const Product = ({ data, loading, error, handleIsloggedIn }) => {
                 <span className="text-red-500 text-2xl font-bold">₹{elem.newPrice}</span>
                 <span className="text-gray-600 line-through">₹{elem.price}</span>
               </div>
-              <p className="text-sm text-gray-500">Offer starts in <span className='text-red-500 font-semibold	'>12:12:01</span></p>
+              <p className="text-sm text-gray-500 max-[390px]:text-[12px]">Offer starts in <span className='text-red-500 font-semibold	'>12:12:01</span></p>
             </div>
             <button className="bg-blue-500 text-white py-1 px-1 w-20 h-8 rounded hover:bg-white hover:text-blue-500 text-sm self-end mt-auto mb-1"
             onClick={handleIslogIn}
