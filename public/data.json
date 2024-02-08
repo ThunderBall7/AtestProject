@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "src": "./productImages/headphone.jpg",
+    "heading": "Headphone",
+    "newPrice": "20",
+    "price": "20000"
+  },
+  {
+    "id": 2,
+    "src": "./productImages/Gamepad.jpg",
+    "heading": "Gamepad",
+    "newPrice": "30",
+    "price": "25000"
+  },
+  {
+    "id": 3,
+    "src": "./productImages/Smartphone.jpg",
+    "heading": "Smartphone",
+    "newPrice": "120",
+    "price": "30000"
+  },
+  {
+    "id": 4,
+    "src": "./productImages/VR.jpg",
+    "heading": "VR",
+    "newPrice": "220",
+    "price": "40000"
+  }
+]

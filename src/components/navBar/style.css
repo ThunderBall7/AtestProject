@@ -1,0 +1,11 @@
+/* style.css */
+
+.menu {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.menu.closed {
+  opacity: 0;
+  transform: translateX(50%);
+  pointer-events: none;
+}
