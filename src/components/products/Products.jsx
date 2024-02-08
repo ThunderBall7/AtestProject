@@ -42,7 +42,7 @@ const Product = ({ data, loading, error, handleIsloggedIn }) => {
     return <div>Error: {error}</div>;
   }
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 w-[95%] mx-auto">
       {data.map((elem, index) => (
         <div key={elem.id || index} className="flex w-96 mx-auto h-[120px] border border-blue-600 bg-white rounded-lg">
           <img src={elem.src} alt={elem.heading} className="w-32 h-auto mr-4 object-cover rounded-lg" />
