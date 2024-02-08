@@ -21,20 +21,20 @@ const Carousel = () => {
         {
             content: <div className='text-center h-48 w-auto mx-auto bg-white rounded-lg bg-{} border border-blue-500' style={{backgroundImage: `url(${Carousel1})`, backgroundSize: 'cover',
             backgroundPosition: 'center',}}>
-                <button className='absolute bottom-4 left-[153px] transform translate-x-1/2 bg-blue-500 rounded-lg px-1 text-sm text-white cursor-pointer'>Buy Now</button>
+                <button className='absolute bottom-4 left-[50%] transform -translate-x-[50%] bg-blue-500 rounded-lg px-1 text-sm text-white cursor-pointer'>Buy Now</button>
             </div>
         },
         {
             content: <div className='text-center h-48 w-auto mx-auto bg-blue-400 rounded-lg'
             style={{backgroundImage: `url(${Carousel2})`, backgroundSize: 'cover',
             backgroundPosition: 'center',}}
-            ><button className='absolute bottom-4 left-[153px] transform translate-x-1/2 bg-blue-500 rounded-lg px-1 text-sm text-white cursor-pointer'>Buy Now</button></div>
+            ><button className='absolute bottom-4 left-[50%] transform -translate-x-[50%] bg-blue-500 rounded-lg px-1 text-sm text-white cursor-pointer'>Buy Now</button></div>
         },
         {
             content: <div className='relative h-48 w-auto mx-auto bg-blue-100 rounded-lg'
             style={{backgroundImage: `url(${Carousel3})`, backgroundSize: 'cover',
             backgroundPosition: 'center',}}
-            ><button className='absolute bottom-1 left-[153px] transform translate-x-1/2 bg-blue-500 rounded-lg px-1 text-sm text-white cursor-pointer'>Buy Now</button></div>
+            ><button className='absolute bottom-1 left-[50%] transform -translate-x-[50%] bg-blue-500 rounded-lg px-1 text-sm text-white cursor-pointer'>Buy Now</button></div>
         }
     ]
 

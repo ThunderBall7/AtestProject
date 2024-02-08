@@ -30,7 +30,7 @@ const NavBar = () => {
           <h1>SUPERSALE</h1>
         </div>
         <div className="toggle_btn" onClick={toggleMenu}>
-          <FontAwesomeIcon icon={isOpen ? faTimes : faBars} className="text-gray-500 cursor-pointer" />
+          <FontAwesomeIcon icon={isOpen ? faTimes : faBars} className="text-white cursor-pointer" />
         </div>
       </div>
       <div className={`menu fixed inset-0 flex justify-end items-center z-50
