@@ -10,16 +10,16 @@ const Home = () => {
   useEffect(() => {
     const loggedIn = localStorage.getItem('isLoggedIn') === 'true';
     setIsLoggedIn(loggedIn);
-  }, []);
+  }, [isLoggedIn]);
 
   const handleIsloggedIn = () => {
     const loggedIn = localStorage.getItem('isLoggedIn') === 'true';
+    setIsLoggedIn(!loggedIn);
 
-    if (loggedIn) {
-      setShowRegistration(false);
-    } else {
+    if (!loggedIn) {
       setShowRegistration(true);
     }
+     // console.log('this comp is calledd')
   };
   return (
     <>

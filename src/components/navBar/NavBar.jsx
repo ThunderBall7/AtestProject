@@ -21,6 +21,15 @@ const NavBar = () => {
   const Email = localStorage.getItem('email');
   const MobNumber = localStorage.getItem('mobileNum');
 
+  const handleLogout = () => {
+    localStorage.removeItem('fullname');
+    localStorage.removeItem('email');
+    localStorage.removeItem('mobileNum');
+    localStorage.setItem('isLoggedIn', false);
+    setIsOpen(false);
+    // console.log('button clicking')
+
+  }
 
   return (
     <div className="relative">
@@ -39,7 +48,7 @@ const NavBar = () => {
           <div className='mt-52' >
             <div className='flex border-0 rounded-lg bg-myBlueDark px-2 py-2 justify-center align-middle gap-2 mb-4'>
               <img className='w-12 h-12' src={userLogo} alt="icon" />
-              <div className='leading-tight text-sm w-32 text-white'>
+              <div className='leading-tight text-sm w-[185px] text-white'>
                 <p>{Name || 'Name'}</p>
                 <p>{MobNumber || '987654321'}</p>
                 <p>{Email || 'something@gmail.com'}</p>
@@ -52,8 +61,13 @@ const NavBar = () => {
               <li className='border-0 mt-1 text-white text-xl rounded-md text-center bg-myBlueDark font-medium py-1'>TERMS & CONDITIONS</li>
               <li className='border-0 mt-1 text-white text-xl rounded-md text-center bg-myBlueDark font-medium py-1'>PRIVACY POLICY</li>
               <li className='border-0 mt-1 text-white text-xl rounded-md text-center bg-myBlueDark font-medium py-1'>FAQ'S</li>
+
             </ul>
+            <div className='border-0 mt-[365px] text-white text-xl rounded-md text-center bg-myBlueDark font-medium py-1'>
+                <button onClick={handleLogout} className="text-white">Logout</button>
+              </div>
             </div>
+
           <div className="absolute top-4 right-2">
           <FontAwesomeIcon icon={faTimes} className="text-black-500 w-5 cursor-pointer rounded-full border border-grey p-2 text-lg text-white close-icon" onClick={closeMenu} />
           </div>

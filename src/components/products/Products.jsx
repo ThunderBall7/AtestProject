@@ -12,13 +12,16 @@ const Product = ({ data, loading, error, handleIsloggedIn }) => {
   const handleIslogIn = () => {
       const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
 
+      handleIsloggedIn();
+
       if (isLoggedIn) {
         console.log('User is logged in buying things now.');
         // navigate("/Products_Info");
       } else {
         console.log('User is not loggggggedin');
+
       }
-      handleIsloggedIn();
+
     };
 
     if (loading) {
